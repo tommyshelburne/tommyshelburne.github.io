@@ -1,0 +1,47 @@
+import type { Project } from '../types';
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'E-Commerce Platform',
+    description: 'A full-stack e-commerce platform with product management, cart functionality, and payment integration.',
+    longDescription: 'Built a comprehensive e-commerce solution featuring user authentication, product catalog with search and filtering, shopping cart, checkout process with Stripe integration, and an admin dashboard for product management.',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Tailwind CSS'],
+    imageUrl: 'https://via.placeholder.com/600x400',
+    demoUrl: 'https://example.com',
+    repoUrl: 'https://github.com/tommyshelburne/project1',
+    featured: true,
+  },
+  {
+    id: '2',
+    title: 'Task Management App',
+    description: 'A collaborative task management application with real-time updates and team features.',
+    longDescription: 'Developed a full-featured task management system with drag-and-drop boards, real-time collaboration using WebSockets, team management, and project organization.',
+    technologies: ['TypeScript', 'React', 'Firebase', 'Material-UI', 'WebSockets'],
+    imageUrl: 'https://via.placeholder.com/600x400',
+    demoUrl: 'https://example.com',
+    repoUrl: 'https://github.com/tommyshelburne/project2',
+    featured: true,
+  },
+  {
+    id: '3',
+    title: 'Weather Dashboard',
+    description: 'A weather dashboard displaying current conditions and forecasts with beautiful visualizations.',
+    longDescription: 'Created an interactive weather dashboard that fetches data from weather APIs, displays current conditions, 7-day forecasts, and weather maps with responsive design.',
+    technologies: ['React', 'TypeScript', 'Chart.js', 'Weather API', 'CSS3'],
+    imageUrl: 'https://via.placeholder.com/600x400',
+    repoUrl: 'https://github.com/tommyshelburne/project3',
+    featured: false,
+  },
+  {
+    id: '4',
+    title: 'Portfolio Website',
+    description: 'A modern, responsive portfolio website built with React and Tailwind CSS.',
+    longDescription: 'Designed and developed a professional portfolio website featuring dark mode, smooth animations, contact form integration, and optimized performance.',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+    imageUrl: 'https://via.placeholder.com/600x400',
+    demoUrl: 'https://tommyshelburne.github.io',
+    repoUrl: 'https://github.com/tommyshelburne/tommyshelburne.github.io',
+    featured: false,
+  },
+];
