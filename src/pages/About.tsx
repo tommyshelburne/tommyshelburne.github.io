@@ -2,16 +2,16 @@ import AnimatedSection from '../components/AnimatedSection';
 
 const skills = [
   {
-    category: 'Frontend',
-    items: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS', 'Next.js', 'Vue.js'],
+    category: 'Languages',
+    items: ['C++', 'C#', 'Java', 'Python', 'SQL', 'Kotlin'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+    category: 'Frameworks & Platforms',
+    items: ['.NET MAUI', 'Firebase', 'JUCE', 'Android (Jetpack Compose)', 'React', 'TypeScript'],
   },
   {
-    category: 'Tools & Other',
-    items: ['Git', 'Docker', 'AWS', 'CI/CD', 'Jest', 'Webpack', 'Vite'],
+    category: 'Tools & Practices',
+    items: ['Git/GitHub', 'Docker', 'Linux', 'REST APIs', 'JUnit', 'MSTest', 'GTest'],
   },
 ];
 
@@ -30,19 +30,18 @@ const About = () => {
         <AnimatedSection delay={0.1}>
           <div className="prose dark:prose-invert max-w-none mb-12">
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              Hi! I'm Tommy Shelburne, a passionate full-stack developer with a love for creating
-              elegant solutions to complex problems. I specialize in building modern web applications
-              that are both beautiful and functional.
+              I'm a software developer with hands-on experience building cross-platform applications,
+              Android apps, and client/server systems. I have a strong foundation in C++, C#, and Java
+              with a focus on clean architecture, UI development, and real-time interaction.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              My journey in software development started with a curiosity about how things work,
-              and it has evolved into a career focused on crafting exceptional user experiences.
-              I believe in writing clean, maintainable code and staying up-to-date with the latest
-              technologies and best practices.
+              I recently completed my B.S. in Computer Science at the University of Utah (December 2025),
+              where my senior capstone — GrooveKit, a cross-platform educational DAW — gave me deep
+              experience in team-based software engineering, event-driven UI architecture, and shipping
+              real software across platforms.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              When I'm not coding, you can find me exploring new technologies, contributing to
-              open-source projects, or sharing knowledge with the developer community.
+              I speak English natively and French at an intermediate-advanced level.
             </p>
           </div>
         </AnimatedSection>
@@ -82,38 +81,51 @@ const About = () => {
             Experience
           </h2>
           <div className="space-y-8">
-            {/* Experience Item 1 */}
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="mb-2">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Full Stack Developer
+                  Director, GTM Operations & Strategic Programs
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Company Name • 2022 - Present
+                  KomBea Corp. (Contract) • January 2026 – Present • Lehi, UT
                 </p>
               </div>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                <li>Developed and maintained full-stack web applications</li>
-                <li>Collaborated with cross-functional teams to deliver features</li>
-                <li>Implemented responsive designs and improved user experience</li>
-                <li>Optimized application performance and reduced load times</li>
+                <li>Built and maintained GTM operational infrastructure to support enterprise deal flow</li>
+                <li>Researched enterprise target accounts and executives for high-context outreach</li>
+                <li>Shaped ROI framing and transformation narratives for financed pilot motions</li>
+                <li>Coordinated executive-facing programs tied to Utah Tech Week and Silicon Slopes</li>
               </ul>
             </div>
 
-            {/* Experience Item 2 */}
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="mb-2">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Frontend Developer
+                  Sr Team Member
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Previous Company • 2020 - 2022
+                  Café Zupas • February 2025 – Present • Salt Lake City, UT
                 </p>
               </div>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                <li>Built responsive web interfaces using React and TypeScript</li>
-                <li>Worked closely with designers to implement pixel-perfect UIs</li>
-                <li>Participated in code reviews and mentored junior developers</li>
+                <li>Work with digital ordering and scheduling systems in a fast-paced environment</li>
+                <li>Identify and suggest improvements to prep-line efficiency weekly</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-primary-500 pl-6">
+              <div className="mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  Shift Lead
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Culver's • June 2020 – January 2025 • South Jordan, UT
+                </p>
+              </div>
+              <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
+                <li>Led shifts and supervised over 10 people in a high-pressure setting</li>
+                <li>Analyzed inventory and staffing data using Excel and internal tools</li>
+                <li>Mentored and trained at least 15 new hires</li>
               </ul>
             </div>
           </div>
@@ -129,7 +141,7 @@ const About = () => {
               Bachelor of Science in Computer Science
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              University Name • Graduated 2020
+              University of Utah • December 2025 • Salt Lake City, UT
             </p>
           </div>
         </AnimatedSection>

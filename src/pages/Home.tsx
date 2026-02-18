@@ -18,16 +18,23 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            {/* Profile Picture */}
+            <div className="flex justify-center mb-8">
+              <div className="w-36 h-36 rounded-full bg-gradient-to-br from-primary-400 to-blue-600 flex items-center justify-center shadow-xl ring-4 ring-white dark:ring-gray-800">
+                <span className="text-4xl font-bold text-white select-none">TS</span>
+              </div>
+            </div>
+
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
               Hi, I'm{' '}
               <span className="text-gradient">Tommy Shelburne</span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-              Full Stack Developer | Problem Solver | Tech Enthusiast
+              Software Developer · C++ · C# · Java
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-              I build modern, user-friendly web applications with clean code and attention to detail.
-              Passionate about creating solutions that make a difference.
+              Entry-level developer with hands-on experience building cross-platform applications,
+              Android apps, and client/server systems. B.S. Computer Science, University of Utah.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
