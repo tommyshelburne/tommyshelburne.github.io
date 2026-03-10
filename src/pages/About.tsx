@@ -84,17 +84,17 @@ const About = () => {
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="mb-2">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Director, GTM Operations & Strategic Programs
+                  GTM Ops & Data Systems (Contract)
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  KomBea Corp. (Contract) • January 2026 – Present • Lehi, UT
+                  KomBea Corp. • January 2026 – Present • Lehi, UT
                 </p>
               </div>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                <li>Built and maintained GTM operational infrastructure to support enterprise deal flow</li>
-                <li>Researched enterprise target accounts and executives for high-context outreach</li>
-                <li>Shaped ROI framing and transformation narratives for financed pilot motions</li>
-                <li>Coordinated executive-facing programs tied to Utah Tech Week and Silicon Slopes</li>
+                <li>Built and maintained GTM operational infrastructure (CRM hygiene, pipeline organization, and contact data ingestion) to support enterprise deal flow</li>
+                <li>Researched enterprise target accounts, industries, and executives to enable high-context outreach and CEO/CFO-level conversations</li>
+                <li>Supported financed pilot and proof-of-value motions by shaping ROI framing, pilot positioning, and transformation narratives for leadership materials</li>
+                <li>Coordinated executive-facing programs and events tied to Utah Tech Week and Silicon Slopes, improving follow-up velocity and GTM execution</li>
               </ul>
             </div>
 
@@ -104,7 +104,7 @@ const About = () => {
                   Sr Team Member
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Café Zupas • February 2025 – Present • Salt Lake City, UT
+                  Café Zupas • February 2025 – March 2026 • Salt Lake City, UT
                 </p>
               </div>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
