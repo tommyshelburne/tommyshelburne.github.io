@@ -18,13 +18,6 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Profile Picture */}
-            <div className="flex justify-center mb-8">
-              <div className="w-36 h-36 rounded-full bg-gradient-to-br from-primary-400 to-blue-600 flex items-center justify-center shadow-xl ring-4 ring-white dark:ring-gray-800">
-                <span className="text-4xl font-bold text-white select-none">TS</span>
-              </div>
-            </div>
-
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
               Hi, I'm{' '}
               <span className="text-gradient">Tommy Shelburne</span>

@@ -28,21 +28,30 @@ const About = () => {
 
         {/* Bio Section */}
         <AnimatedSection delay={0.1}>
-          <div className="prose dark:prose-invert max-w-none mb-12">
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              I'm a software developer with hands-on experience building cross-platform applications,
-              Android apps, and client/server systems. I have a strong foundation in C++, C#, and Java
-              with a focus on clean architecture, UI development, and real-time interaction.
-            </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              I recently completed my B.S. in Computer Science at the University of Utah (December 2025),
-              where my senior capstone — GrooveKit, a cross-platform educational DAW — gave me deep
-              experience in team-based software engineering, event-driven UI architecture, and shipping
-              real software across platforms.
-            </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300">
-              I speak English natively and French at an intermediate-advanced level.
-            </p>
+          <div className="flex flex-col md:flex-row gap-10 items-start mb-12">
+            <div className="w-48 h-56 md:w-56 md:h-64 flex-shrink-0 rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="/headshot.jpg"
+                alt="Tommy Shelburne"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="prose dark:prose-invert max-w-none">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                I'm a software developer with hands-on experience building cross-platform applications,
+                Android apps, and client/server systems. I have a strong foundation in C++, C#, and Java
+                with a focus on clean architecture, UI development, and real-time interaction.
+              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                I recently completed my B.S. in Computer Science at the University of Utah (December 2025),
+                where my senior capstone — GrooveKit, a cross-platform educational DAW — gave me deep
+                experience in team-based software engineering, event-driven UI architecture, and shipping
+                real software across platforms.
+              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                I speak English natively and French at an intermediate-advanced level.
+              </p>
+            </div>
           </div>
         </AnimatedSection>
 
