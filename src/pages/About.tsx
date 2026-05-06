@@ -3,15 +3,23 @@ import AnimatedSection from '../components/AnimatedSection';
 const skills = [
   {
     category: 'Languages',
-    items: ['C++', 'C#', 'Java', 'Python', 'SQL', 'Kotlin'],
+    items: ['JavaScript', 'TypeScript', 'C++', 'C#', 'Java', 'Python', 'SQL'],
   },
   {
-    category: 'Frameworks & Platforms',
-    items: ['.NET MAUI', 'Firebase', 'JUCE', 'Android (Jetpack Compose)', 'React', 'TypeScript'],
+    category: 'Frontend',
+    items: ['React', 'Vite', 'Tailwind CSS', 'Zustand', 'React Router', 'Jest/Vitest', 'React Testing Library'],
+  },
+  {
+    category: 'Backend & Data',
+    items: ['.NET 10', 'C#', 'Node.js', 'PostgreSQL', 'EF Core', 'Firebase', 'REST APIs'],
   },
   {
     category: 'Tools & Practices',
-    items: ['Git/GitHub', 'Docker', 'Linux', 'REST APIs', 'JUnit', 'MSTest', 'GTest'],
+    items: ['Git/GitHub', 'Docker', 'Linux', 'CI/CD', 'Figma'],
+  },
+  {
+    category: 'Learning',
+    items: ['Next.js', 'React Query', 'Blazor Server'],
   },
 ];
 
@@ -38,15 +46,17 @@ const About = () => {
             </div>
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                I'm a software developer with hands-on experience building cross-platform applications,
-                Android apps, and client/server systems. I have a strong foundation in C++, C#, and Java
-                with a focus on clean architecture, UI development, and real-time interaction.
+                I'm a software engineer building production SaaS and automation systems.
+                I'm currently developing Meridian, a multi-tenant government BD platform on
+                ASP.NET Core 10, PostgreSQL, and Blazor Server. Previously, I built BidMatch
+                at KomBea — an automated contract pipeline that surfaced and qualified 35+
+                government and enterprise opportunities from a standing start.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                I recently completed my B.S. in Computer Science at the University of Utah (December 2025),
-                where my senior capstone — GrooveKit, a cross-platform educational DAW — gave me deep
-                experience in team-based software engineering, event-driven UI architecture, and shipping
-                real software across platforms.
+                I'm comfortable across the stack: React/TypeScript frontends, .NET backends,
+                and Linux deployment. I hold a B.S. in Computer Science from the University
+                of Utah (December 2025), where my senior capstone — GrooveKit, a cross-platform
+                educational DAW — won the "Coolest Project" award at the showcase.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300">
                 I speak English natively and French at an intermediate-advanced level.
@@ -93,32 +103,16 @@ const About = () => {
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="mb-2">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  GTM Ops & Data Systems (Contract)
+                  Software Engineer (Contract)
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  KomBea Corp. • January 2026 – Present • Lehi, UT
+                  KomBea Corp. • January 2026 – April 2026 • Lehi, UT
                 </p>
               </div>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                <li>Built and maintained GTM operational infrastructure (CRM hygiene, pipeline organization, and contact data ingestion) to support enterprise deal flow</li>
-                <li>Researched enterprise target accounts, industries, and executives to enable high-context outreach and CEO/CFO-level conversations</li>
-                <li>Supported financed pilot and proof-of-value motions by shaping ROI framing, pilot positioning, and transformation narratives for leadership materials</li>
-                <li>Coordinated executive-facing programs and events tied to Utah Tech Week and Silicon Slopes, improving follow-up velocity and GTM execution</li>
-              </ul>
-            </div>
-
-            <div className="border-l-4 border-primary-500 pl-6">
-              <div className="mb-2">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Sr Team Member
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Café Zupas • February 2025 – March 2026 • Salt Lake City, UT
-                </p>
-              </div>
-              <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                <li>Work with digital ordering and scheduling systems in a fast-paced environment</li>
-                <li>Identify and suggest improvements to prep-line efficiency weekly</li>
+                <li>Built BidMatch, an automated government contract pipeline (SAM.gov → PostgreSQL → Pipedrive CRM) that surfaced and qualified 35+ opportunities from zero prior government business</li>
+                <li>Architected a multi-agent AI system (8 agents) coordinating research, qualification, targeting, and outreach workflows autonomously</li>
+                <li>Designed data pipelines supporting enterprise deal flow across federal and state government market segments</li>
               </ul>
             </div>
 
@@ -132,9 +126,7 @@ const About = () => {
                 </p>
               </div>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                <li>Led shifts and supervised over 10 people in a high-pressure setting</li>
-                <li>Analyzed inventory and staffing data using Excel and internal tools</li>
-                <li>Mentored and trained at least 15 new hires</li>
+                <li>Led shifts of 10+ team members in a high-volume environment; trained 15+ new hires and consistently maintained service quality under pressure</li>
               </ul>
             </div>
           </div>

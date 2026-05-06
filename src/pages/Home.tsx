@@ -23,11 +23,13 @@ const Home = () => {
               <span className="text-gradient">Tommy Shelburne</span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-              Software Developer · C++ · C# · Java
+              Software Engineer · React · .NET · PostgreSQL
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-              Entry-level developer with hands-on experience building cross-platform applications,
-              Android apps, and client/server systems. B.S. Computer Science, University of Utah.
+              I build production SaaS and automation systems. Currently shipping Meridian,
+              a multi-tenant government BD platform on ASP.NET Core 10. Previously built BidMatch
+              at KomBea — an automated contract pipeline that surfaced 35+ qualified opportunities
+              from a standing start.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -59,7 +61,7 @@ const Home = () => {
               Here are some of my recent works
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {featuredProjects.map((project, index) => (
               <ProjectCard key={project.id} project={project} index={index} />
             ))}

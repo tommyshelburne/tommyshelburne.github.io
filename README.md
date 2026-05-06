@@ -4,10 +4,10 @@ My personal portfolio site, live at [tommyshelburne.github.io](https://tommyshel
 
 ## Tech Stack
 
-- **React 18** with TypeScript
+- **React 19** with TypeScript
 - **Vite** for builds
 - **Tailwind CSS v4**
-- **React Router v6**
+- **React Router v7**
 - **Framer Motion** for animations
 - **Formspree** for contact form handling
 - Deployed to **GitHub Pages**
