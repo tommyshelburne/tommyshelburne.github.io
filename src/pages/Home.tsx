@@ -104,7 +104,8 @@ const Home = () => {
             variants={heroStagger}
             className="eyebrow mb-6"
           >
-            Tommy Shelburne · Software Engineer · Salt Lake City
+            <span className="hidden sm:inline">Tommy Shelburne · </span>
+            Software Engineer · Salt Lake City
           </motion.p>
 
           <motion.h1
@@ -163,10 +164,10 @@ const Home = () => {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 border-t border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900/40">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-t border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900/40">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection>
-            <div className="flex items-center gap-6 mb-16">
+            <div className="flex items-center gap-6 mb-10 sm:mb-16">
               <p className="eyebrow whitespace-nowrap">01 / Selected work</p>
               <div className="h-px flex-grow bg-stone-200 dark:bg-stone-800" />
               <Link
@@ -178,7 +179,7 @@ const Home = () => {
             </div>
           </AnimatedSection>
 
-          <div className="space-y-24">
+          <div className="space-y-16 md:space-y-24">
             {featuredProjects.map((project, index) => (
               <FeaturedRow key={project.id} project={project} index={index} />
             ))}
@@ -187,7 +188,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-28 px-4 sm:px-6 lg:px-8 border-t border-stone-200 dark:border-stone-800">
+      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 border-t border-stone-200 dark:border-stone-800">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection>
             <p className="eyebrow mb-6">02 / Contact</p>
