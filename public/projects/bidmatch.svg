@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="'IBM Plex Mono', ui-monospace, Menlo, monospace">
+  <defs>
+    <pattern id="b-dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#2a241e"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="#161310"/>
+  <rect width="1200" height="750" fill="url(#b-dots)"/>
+  <rect x="28" y="28" width="1144" height="694" fill="none" stroke="#332c24" stroke-width="1.5"/>
+
+  <!-- pipeline spine -->
+  <line x1="180" y1="395" x2="1020" y2="395" stroke="#a3b18a" stroke-width="2"/>
+
+  <!-- agent branches above and below -->
+  <g stroke="#5c6650" stroke-width="1.5" fill="none">
+    <path d="M 390 395 V 250 H 540"/>
+    <path d="M 390 395 V 540 H 540"/>
+    <path d="M 810 395 V 250 H 660"/>
+    <path d="M 810 395 V 540 H 660"/>
+  </g>
+
+  <!-- pipeline nodes -->
+  <g>
+    <circle cx="180" cy="395" r="14" fill="#161310" stroke="#a3b18a" stroke-width="2.5"/>
+    <circle cx="390" cy="395" r="10" fill="#a3b18a"/>
+    <rect x="576" y="371" width="48" height="48" fill="#161310" stroke="#a3b18a" stroke-width="2.5"/>
+    <circle cx="810" cy="395" r="10" fill="#a3b18a"/>
+    <circle cx="1020" cy="395" r="14" fill="#161310" stroke="#a3b18a" stroke-width="2.5"/>
+  </g>
+
+  <!-- agent nodes -->
+  <g fill="#161310" stroke="#8d9a76" stroke-width="2">
+    <circle cx="540" cy="250" r="9"/>
+    <circle cx="540" cy="540" r="9"/>
+    <circle cx="660" cy="250" r="9"/>
+    <circle cx="660" cy="540" r="9"/>
+  </g>
+
+  <!-- flow ticks -->
+  <g fill="#ede8e0">
+    <circle cx="285" cy="395" r="3.5"/>
+    <circle cx="487" cy="395" r="3.5"/>
+    <circle cx="715" cy="395" r="3.5"/>
+    <circle cx="915" cy="395" r="3.5"/>
+  </g>
+
+  <g font-size="14" letter-spacing="2" fill="#5c544a" text-anchor="middle">
+    <text x="180" y="445">SAM.GOV</text>
+    <text x="600" y="345">SCORE</text>
+    <text x="1020" y="445">CRM</text>
+  </g>
+
+  <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">BIDMATCH</text>
+  <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">8-AGENT CONTRACT PIPELINE — 35+ QUALIFIED OPPORTUNITIES</text>
+  <text x="1136" y="92" font-size="56" text-anchor="end" font-style="italic" fill="#332c24">02</text>
+</svg>

@@ -9,38 +9,45 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-50px' }}
+      transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
+      className="group flex flex-col bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-primary-400/60 dark:hover:border-primary-500/50 hover:shadow-xl hover:shadow-stone-900/5 dark:hover:shadow-black/30"
     >
-      {/* Project Image */}
+      {/* Cover */}
       {project.imageUrl && (
-        <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">
+        <div className="aspect-[16/10] overflow-hidden border-b border-stone-200 dark:border-stone-800">
           <img
             src={project.imageUrl}
-            alt={project.title}
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            alt={`${project.title} cover art`}
+            loading="lazy"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
           />
         </div>
       )}
 
-      {/* Project Content */}
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-          {project.title}
-        </h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">
+      {/* Content */}
+      <div className="flex flex-col flex-grow p-6">
+        <div className="flex items-baseline justify-between mb-3">
+          <h3 className="font-display text-2xl text-stone-900 dark:text-stone-100">
+            {project.title}
+          </h3>
+          <span className="font-mono text-xs text-stone-400 dark:text-stone-600">
+            {String(index + 1).padStart(2, '0')}
+          </span>
+        </div>
+        <p className="text-sm leading-relaxed text-stone-600 dark:text-stone-400 mb-5">
           {project.description}
         </p>
 
         {/* Technologies */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-1.5 mb-6 mt-auto">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 text-xs font-medium bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full"
+              className="px-2 py-0.5 font-mono text-[11px] uppercase tracking-wide text-stone-500 dark:text-stone-400 border border-stone-200 dark:border-stone-700 rounded"
             >
               {tech}
             </span>
@@ -48,16 +55,16 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         </div>
 
         {/* Links */}
-        <div className="flex space-x-4">
+        <div className="flex space-x-5">
           {project.demoUrl && (
             <a
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+              className="flex items-center gap-1.5 font-mono text-xs uppercase tracking-wider text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
             >
-              <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-              <span className="text-sm font-medium">Live Demo</span>
+              <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+              Live demo
             </a>
           )}
           {project.repoUrl && (
@@ -65,15 +72,15 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors"
+              className="flex items-center gap-1.5 font-mono text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
             >
-              <CodeBracketIcon className="h-5 w-5" />
-              <span className="text-sm font-medium">Code</span>
+              <CodeBracketIcon className="h-4 w-4" />
+              Code
             </a>
           )}
         </div>
       </div>
-    </motion.div>
+    </motion.article>
   );
 };
 

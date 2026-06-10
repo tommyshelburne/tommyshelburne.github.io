@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="'IBM Plex Mono', ui-monospace, Menlo, monospace">
+  <defs>
+    <pattern id="s-dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#2a241e"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="#161310"/>
+  <rect width="1200" height="750" fill="url(#s-dots)"/>
+  <rect x="28" y="28" width="1144" height="694" fill="none" stroke="#332c24" stroke-width="1.5"/>
+
+  <!-- wasatch range -->
+  <g fill="none" stroke-width="2.5">
+    <path d="M 220 560 L 400 300 L 580 560" stroke="#3f3852"/>
+    <path d="M 460 560 L 640 260 L 820 560" stroke="#55497a"/>
+    <path d="M 700 560 L 880 330 L 1060 560" stroke="#7c7cf0"/>
+  </g>
+  <circle cx="880" cy="330" r="7" fill="#7c7cf0"/>
+
+  <!-- pulse line across the valley floor -->
+  <path d="M 120 560 H 420 L 450 500 L 490 612 L 525 470 L 560 560 H 1080"
+        fill="none" stroke="#ede8e0" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="525" cy="470" r="5" fill="#ede8e0"/>
+
+  <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">SLC TECH PULSE</text>
+  <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">EVENTS / JOBS / COMPANIES — REACT + FIREBASE</text>
+  <text x="1136" y="92" font-size="56" text-anchor="end" font-style="italic" fill="#332c24">03</text>
+</svg>

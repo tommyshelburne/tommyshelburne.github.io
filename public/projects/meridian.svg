@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="'IBM Plex Mono', ui-monospace, Menlo, monospace">
+  <defs>
+    <pattern id="m-dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#2a241e"/>
+    </pattern>
+    <clipPath id="m-globe">
+      <circle cx="600" cy="395" r="240"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="750" fill="#161310"/>
+  <rect width="1200" height="750" fill="url(#m-dots)"/>
+  <rect x="28" y="28" width="1144" height="694" fill="none" stroke="#332c24" stroke-width="1.5"/>
+
+  <!-- globe of meridians -->
+  <g clip-path="url(#m-globe)" stroke="#d8835b" fill="none" stroke-width="2">
+    <circle cx="600" cy="395" r="240" stroke-width="2.5"/>
+    <ellipse cx="600" cy="395" rx="180" ry="240"/>
+    <ellipse cx="600" cy="395" rx="110" ry="240"/>
+    <ellipse cx="600" cy="395" rx="40" ry="240"/>
+    <line x1="600" y1="155" x2="600" y2="635"/>
+    <g stroke="#6b5240" stroke-width="1.5">
+      <line x1="360" y1="305" x2="840" y2="305"/>
+      <line x1="360" y1="395" x2="840" y2="395"/>
+      <line x1="360" y1="485" x2="840" y2="485"/>
+    </g>
+  </g>
+
+  <!-- prime meridian highlight + waypoints -->
+  <line x1="600" y1="120" x2="600" y2="670" stroke="#d8835b" stroke-width="1" stroke-dasharray="2 8"/>
+  <circle cx="600" cy="155" r="6" fill="#d8835b"/>
+  <circle cx="710" cy="305" r="5" fill="#ede8e0"/>
+  <circle cx="490" cy="485" r="5" fill="#ede8e0"/>
+  <circle cx="600" cy="635" r="6" fill="#d8835b"/>
+
+  <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">MERIDIAN</text>
+  <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">GOV BD PLATFORM — ASP.NET CORE / POSTGRESQL</text>
+  <text x="1136" y="92" font-size="56" text-anchor="end" font-style="italic" fill="#332c24">01</text>
+</svg>

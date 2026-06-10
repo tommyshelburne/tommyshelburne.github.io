@@ -8,13 +8,14 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <AnimatedSection>
-          <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              My Projects
+          <div className="mb-16">
+            <p className="eyebrow mb-4">Projects</p>
+            <h1 className="font-display text-4xl sm:text-5xl text-stone-900 dark:text-stone-100 mb-4">
+              Things I've built<span className="text-primary-500">.</span>
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              A collection of my recent work and personal projects. Each project represents
-              a unique challenge and learning experience.
+            <p className="text-lg text-stone-600 dark:text-stone-400 max-w-2xl">
+              Production platforms, automation pipelines, and the occasional audio
+              engine — each one a different challenge.
             </p>
           </div>
         </AnimatedSection>
@@ -29,7 +30,7 @@ const Projects = () => {
         {/* Empty State */}
         {projects.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-stone-600 dark:text-stone-400">
               No projects to display yet. Check back soon!
             </p>
           </div>
