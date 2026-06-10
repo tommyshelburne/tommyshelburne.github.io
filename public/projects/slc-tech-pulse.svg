@@ -23,6 +23,6 @@
   <circle cx="525" cy="470" r="5" fill="#ede8e0"/>
 
   <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">SLC TECH PULSE</text>
-  <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">EVENTS / JOBS / COMPANIES — REACT + FIREBASE</text>
+  <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">EVENTS / JOBS / COMPANIES · REACT + FIREBASE</text>
   <text x="1136" y="92" font-size="56" text-anchor="end" font-style="italic" fill="#332c24">03</text>
 </svg>

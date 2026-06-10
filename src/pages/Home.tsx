@@ -104,7 +104,7 @@ const Home = () => {
             variants={heroStagger}
             className="eyebrow mb-6"
           >
-            Tommy Shelburne — Software Engineer · Salt Lake City
+            Tommy Shelburne · Software Engineer · Salt Lake City
           </motion.p>
 
           <motion.h1
@@ -126,7 +126,7 @@ const Home = () => {
             className="text-lg text-stone-600 dark:text-stone-400 mb-10 max-w-2xl leading-relaxed"
           >
             Currently shipping Meridian, a multi-tenant government BD platform on
-            ASP.NET Core and PostgreSQL. Previously built BidMatch at KomBea — an
+            ASP.NET Core and PostgreSQL. Previously built BidMatch at KomBea, an
             8-agent pipeline that surfaced 35+ qualified government opportunities
             from a standing start.
           </motion.p>
@@ -167,7 +167,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <AnimatedSection>
             <div className="flex items-center gap-6 mb-16">
-              <p className="eyebrow whitespace-nowrap">01 — Selected work</p>
+              <p className="eyebrow whitespace-nowrap">01 / Selected work</p>
               <div className="h-px flex-grow bg-stone-200 dark:bg-stone-800" />
               <Link
                 to="/projects"
@@ -190,7 +190,7 @@ const Home = () => {
       <section className="py-28 px-4 sm:px-6 lg:px-8 border-t border-stone-200 dark:border-stone-800">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection>
-            <p className="eyebrow mb-6">02 — Contact</p>
+            <p className="eyebrow mb-6">02 / Contact</p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-stone-900 dark:text-stone-100 mb-8">
               Let's build something<span className="text-primary-500">.</span>
             </h2>

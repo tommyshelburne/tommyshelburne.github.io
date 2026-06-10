@@ -15,7 +15,7 @@ const Projects = () => {
             </h1>
             <p className="text-lg text-stone-600 dark:text-stone-400 max-w-2xl">
               Production platforms, automation pipelines, and the occasional audio
-              engine — each one a different challenge.
+              engine. Each one a different challenge.
             </p>
           </div>
         </AnimatedSection>

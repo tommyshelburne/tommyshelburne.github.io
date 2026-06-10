@@ -3,7 +3,7 @@
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Copper accent — the single place to change the color scheme */
+  /* Copper accent: the single place to change the color scheme */
   --color-primary-50: #fbf4ee;
   --color-primary-100: #f6e5d6;
   --color-primary-200: #eccaad;
@@ -36,7 +36,7 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-300 dark:to-primary-500;
   }
 
-  /* Dot-grid texture — color it via text-* and fade it with a mask */
+  /* Dot-grid texture: color it via text-* and fade it with a mask */
   .bg-dots {
     background-image: radial-gradient(currentColor 1px, transparent 1px);
     background-size: 24px 24px;

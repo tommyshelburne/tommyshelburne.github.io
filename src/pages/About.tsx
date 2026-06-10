@@ -60,14 +60,14 @@ const About = () => {
                 I'm a software engineer building production SaaS and automation systems.
                 I'm currently developing Meridian, a multi-tenant government BD platform on
                 ASP.NET Core 10, PostgreSQL, and Blazor Server. Previously, I built BidMatch
-                at KomBea — an automated contract pipeline that surfaced and qualified 35+
+                at KomBea, an automated contract pipeline that surfaced and qualified 35+
                 government and enterprise opportunities from a standing start.
               </p>
               <p className="text-lg text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
                 I'm comfortable across the stack: React/TypeScript frontends, .NET backends,
                 and Linux deployment. I hold a B.S. in Computer Science from the University
-                of Utah (December 2025), where my senior capstone — GrooveKit, a cross-platform
-                educational DAW — won the "Coolest Project" award at the showcase.
+                of Utah (December 2025), where my senior capstone GrooveKit, a cross-platform
+                educational DAW, won the "Coolest Project" award at the showcase.
               </p>
               <p className="text-lg text-stone-600 dark:text-stone-300 leading-relaxed">
                 I speak English natively and French at an intermediate-advanced level.
@@ -118,7 +118,7 @@ const About = () => {
                 January 2026 – April 2026 · Lehi, UT
               </p>
               <h3 className="font-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
-                Software Engineer (Contract) — KomBea Corp.
+                Software Engineer (Contract) · KomBea Corp.
               </h3>
               <ul className="list-disc list-outside ml-4 text-stone-600 dark:text-stone-300 space-y-2 leading-relaxed">
                 <li>Built BidMatch, an automated government contract pipeline (SAM.gov → PostgreSQL → Pipedrive CRM) that surfaced and qualified 35+ opportunities from zero prior government business</li>
@@ -132,7 +132,7 @@ const About = () => {
                 June 2020 – January 2025 · South Jordan, UT
               </p>
               <h3 className="font-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
-                Shift Lead — Culver's
+                Shift Lead · Culver's
               </h3>
               <ul className="list-disc list-outside ml-4 text-stone-600 dark:text-stone-300 space-y-2 leading-relaxed">
                 <li>Led shifts of 10+ team members in a high-volume environment; trained 15+ new hires and consistently maintained service quality under pressure</li>
@@ -152,7 +152,7 @@ const About = () => {
               December 2025 · Salt Lake City, UT
             </p>
             <h3 className="font-display text-2xl text-stone-900 dark:text-stone-100">
-              B.S. Computer Science — University of Utah
+              B.S. Computer Science · University of Utah
             </h3>
           </div>
         </AnimatedSection>
