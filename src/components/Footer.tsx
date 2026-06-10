@@ -69,7 +69,7 @@ const Footer = () => {
             © {currentYear} Tommy Shelburne
           </p>
           <p className="font-mono text-xs text-stone-400 dark:text-stone-600">
-            Built with React, Vite & Tailwind — deployed on Vercel
+            Built with React, Vite & Tailwind · deployed on Vercel
           </p>
         </div>
       </div>

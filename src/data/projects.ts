@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     id: 'meridian',
     title: 'Meridian',
-    description: 'A multi-tenant SaaS platform automating government business development — opportunity ingestion, configurable scoring, POC enrichment, and multi-step outreach with CAN-SPAM compliance.',
+    description: 'A multi-tenant SaaS platform automating government business development: opportunity ingestion, configurable scoring, POC enrichment, and multi-step outreach with CAN-SPAM compliance.',
     longDescription: 'Designed a clean hexagonal architecture with row-level tenant isolation, pluggable CRM/email adapters (Pipedrive, HubSpot, Salesforce), and a rule-based scoring engine. 134 passing tests across unit and integration. Stack: ASP.NET Core 10, C#, PostgreSQL, EF Core, Blazor Server.',
     technologies: ['ASP.NET Core 10', 'C#', 'PostgreSQL', 'EF Core', 'Blazor Server'],
     imageUrl: '/projects/meridian.svg',
@@ -14,8 +14,8 @@ export const projects: Project[] = [
   {
     id: 'bidmatch',
     title: 'BidMatch & AI Agent Fleet',
-    description: 'An automated government contract pipeline (SAM.gov → PostgreSQL → Pipedrive CRM) built at KomBea — an 8-agent fleet that surfaced and qualified 35+ opportunities from zero prior government business.',
-    longDescription: 'Architected a production multi-agent system where each agent had a defined role — scraper, classifier, researcher, outreach drafter, CRM sync — coordinating via message bus with retry logic for 24/7 autonomous operation. Designed the full pipeline end-to-end: ingestion → scoring → enrichment → CRM write → outreach draft.',
+    description: 'An automated government contract pipeline (SAM.gov → PostgreSQL → Pipedrive CRM) built at KomBea. The 8-agent fleet surfaced and qualified 35+ opportunities from zero prior government business.',
+    longDescription: 'Architected a production multi-agent system where each agent had a defined role (scraper, classifier, researcher, outreach drafter, CRM sync), coordinating via message bus with retry logic for 24/7 autonomous operation. Designed the full pipeline end-to-end: ingestion → scoring → enrichment → CRM write → outreach draft.',
     technologies: ['Python', 'Claude API', 'PostgreSQL', 'Pipedrive', 'Multi-agent orchestration'],
     imageUrl: '/projects/bidmatch.svg',
     featured: true,
@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 'slc-tech-pulse',
     title: 'SLC Tech Pulse',
-    description: 'A React/TypeScript event aggregation app for the Salt Lake City tech scene — unifying events, jobs, and companies that were scattered across 5+ disconnected sites.',
+    description: 'A React/TypeScript event aggregation app for the Salt Lake City tech scene, unifying events, jobs, and companies that were scattered across 5+ disconnected sites.',
     longDescription: 'Built a unified, filterable UI with Zustand for cross-filter state and Firebase Auth/Firestore for persistence. Designed proper error boundaries and responsive layouts. Stack: React, TypeScript, Vite, Tailwind CSS, Zustand, Firebase.',
     technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Zustand', 'Firebase'],
     imageUrl: '/projects/slc-tech-pulse.svg',
@@ -33,7 +33,7 @@ export const projects: Project[] = [
   {
     id: 'groovekit',
     title: 'GrooveKit',
-    description: '"Coolest Project" award winner at the Senior Capstone showcase — a modular, cross-platform educational DAW built in C++ and the JUCE audio framework.',
+    description: '"Coolest Project" award winner at the Senior Capstone showcase: a modular, cross-platform educational DAW built in C++ and the JUCE audio framework.',
     longDescription: 'Designed and implemented a component-based GUI architecture coordinating real-time playback, editing, and audio processing. Collaborated within a small engineering team using GitHub for version control, pull requests, and code reviews.',
     technologies: ['C++', 'JUCE', 'CLion', 'Git/GitHub'],
     imageUrl: '/projects/groovekit.svg',
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     id: 'mission-control',
     title: 'Mission Control',
-    description: 'An internal ops dashboard for monitoring and orchestrating a fleet of background agents — Next.js + TypeScript with a SQLite-backed task queue.',
+    description: 'An internal ops dashboard for monitoring and orchestrating a fleet of background agents, built with Next.js and TypeScript on a SQLite-backed task queue.',
     longDescription: 'Self-hosted ops dashboard exposed over Tailscale, with a push-based task assignment model (cron polls SQLite, dispatches via Redis streams). Used daily to monitor agent health, route tasks, and inspect job state.',
     technologies: ['Next.js', 'TypeScript', 'React', 'SQLite', 'Tailwind CSS'],
     imageUrl: '/projects/mission-control.svg',
