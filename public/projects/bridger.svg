@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="'IBM Plex Mono', ui-monospace, Menlo, monospace">
+  <defs>
+    <pattern id="b-dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#2a241e"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="#161310"/>
+  <rect width="1200" height="750" fill="url(#b-dots)"/>
+  <rect x="28" y="28" width="1144" height="694" fill="none" stroke="#332c24" stroke-width="1.5"/>
+
+  <!-- suspension bridge deck -->
+  <line x1="140" y1="500" x2="1060" y2="500" stroke="#6f9ec9" stroke-width="2.5"/>
+
+  <!-- towers -->
+  <g stroke="#6f9ec9" stroke-width="2.5">
+    <line x1="400" y1="500" x2="400" y2="240"/>
+    <line x1="800" y1="500" x2="800" y2="240"/>
+  </g>
+
+  <!-- main cables -->
+  <g stroke="#43536b" stroke-width="2" fill="none">
+    <path d="M140 380 Q270 500 400 250"/>
+    <path d="M400 250 Q600 430 800 250"/>
+    <path d="M800 250 Q930 500 1060 380"/>
+  </g>
+
+  <!-- hangers -->
+  <g stroke="#332c24" stroke-width="1.5">
+    <line x1="500" y1="320" x2="500" y2="500"/>
+    <line x1="600" y1="340" x2="600" y2="500"/>
+    <line x1="700" y1="320" x2="700" y2="500"/>
+  </g>
+
+  <!-- friends as nodes crossing -->
+  <circle cx="400" cy="240" r="6" fill="#6f9ec9"/>
+  <circle cx="800" cy="240" r="6" fill="#6f9ec9"/>
+  <circle cx="330" cy="500" r="6" fill="#ede8e0"/>
+  <circle cx="600" cy="500" r="6" fill="#ede8e0"/>
+  <circle cx="870" cy="500" r="6" fill="#ede8e0"/>
+  <line x1="330" y1="500" x2="600" y2="500" stroke="#ede8e0" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="600" y1="500" x2="870" y2="500" stroke="#ede8e0" stroke-width="1" stroke-dasharray="2 8"/>
+
+  <!-- water -->
+  <g stroke="#2a3542" stroke-width="1.5">
+    <line x1="180" y1="580" x2="420" y2="580"/>
+    <line x1="500" y1="600" x2="760" y2="600"/>
+    <line x1="840" y1="580" x2="1020" y2="580"/>
+  </g>
+
+  <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">BRIDGER</text>
+  <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">SOCIAL MEDIA FOR CLOSE FRIENDS · REACT / EXPRESS / POSTGRES</text>
+  <text x="1136" y="92" font-size="56" text-anchor="end" font-style="italic" fill="#332c24">07</text>
+</svg>

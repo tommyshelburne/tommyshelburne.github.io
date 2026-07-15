@@ -33,7 +33,7 @@
   <circle cx="490" cy="485" r="5" fill="#ede8e0"/>
   <circle cx="600" cy="635" r="6" fill="#d8835b"/>
 
-  <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">MERIDIAN</text>
+  <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">PURSUVO</text>
   <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">GOV BD PLATFORM · ASP.NET CORE / POSTGRESQL</text>
   <text x="1136" y="92" font-size="56" text-anchor="end" font-style="italic" fill="#332c24">01</text>
 </svg>
