@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="'IBM Plex Mono', ui-monospace, Menlo, monospace">
+  <defs>
+    <pattern id="s-dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#2a241e"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="#161310"/>
+  <rect width="1200" height="750" fill="url(#s-dots)"/>
+  <rect x="28" y="28" width="1144" height="694" fill="none" stroke="#332c24" stroke-width="1.5"/>
+
+  <!-- proposal flowing toward the gate -->
+  <line x1="120" y1="395" x2="520" y2="395" stroke="#6b4a44" stroke-width="1.5" stroke-dasharray="2 8"/>
+  <circle cx="180" cy="395" r="5" fill="#ede8e0"/>
+  <circle cx="300" cy="395" r="5" fill="#ede8e0"/>
+  <circle cx="420" cy="395" r="5" fill="#ede8e0"/>
+
+  <!-- the gate -->
+  <g stroke="#cf6a5d" fill="none" stroke-width="2.5">
+    <rect x="520" y="255" width="160" height="280"/>
+    <line x1="520" y1="325" x2="680" y2="325"/>
+    <line x1="600" y1="255" x2="600" y2="535" stroke-dasharray="3 7" stroke-width="1.5"/>
+  </g>
+  <text x="600" y="302" font-size="20" letter-spacing="4" text-anchor="middle" fill="#cf6a5d">GATE</text>
+
+  <!-- dispositions fanning out -->
+  <g stroke-width="2" fill="none">
+    <path d="M680 395 L800 275" stroke="#8d9a76"/>
+    <path d="M680 395 L800 395" stroke="#8d8579"/>
+    <path d="M680 395 L800 515" stroke="#6b4a44"/>
+  </g>
+  <circle cx="800" cy="275" r="6" fill="#8d9a76"/>
+  <circle cx="800" cy="395" r="6" fill="#8d8579"/>
+  <circle cx="800" cy="515" r="6" fill="#6b4a44"/>
+  <text x="822" y="281" font-size="15" letter-spacing="2" fill="#8d9a76">ACK</text>
+  <text x="822" y="401" font-size="15" letter-spacing="2" fill="#8d8579">EDIT</text>
+  <text x="822" y="521" font-size="15" letter-spacing="2" fill="#6b4a44">REJECT</text>
+
+  <!-- signed audit chain -->
+  <g stroke="#5c544a" stroke-width="1.5" fill="none">
+    <rect x="440" y="600" width="60" height="36"/>
+    <rect x="520" y="600" width="60" height="36"/>
+    <rect x="600" y="600" width="60" height="36"/>
+    <rect x="680" y="600" width="60" height="36"/>
+    <line x1="500" y1="618" x2="520" y2="618"/>
+    <line x1="580" y1="618" x2="600" y2="618"/>
+    <line x1="660" y1="618" x2="680" y2="618"/>
+  </g>
+
+  <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">SHELBIE</text>
+  <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">AGENT CONTROL PLANE · GATED / EXACTLY-ONCE / SIGNED</text>
+  <text x="1136" y="92" font-size="56" text-anchor="end" font-style="italic" fill="#332c24">02</text>
+</svg>
