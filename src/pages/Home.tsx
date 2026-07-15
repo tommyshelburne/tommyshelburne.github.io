@@ -126,10 +126,10 @@ const Home = () => {
             variants={heroStagger}
             className="text-lg text-stone-600 dark:text-stone-400 mb-10 max-w-2xl leading-relaxed"
           >
-            Currently shipping Meridian, a multi-tenant government BD platform on
-            ASP.NET Core and PostgreSQL. Previously built BidMatch at KomBea, an
-            8-agent pipeline that surfaced 35+ qualified government opportunities
-            from a standing start.
+            Founder of Pursuvo, a multi-tenant government BD platform on
+            ASP.NET Core and PostgreSQL. I specialize in making AI systems
+            trustworthy: agent guardrails, LLM evals, and tamper-evident
+            audit trails.
           </motion.p>
 
           <motion.div
