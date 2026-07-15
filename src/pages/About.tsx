@@ -3,27 +3,23 @@ import AnimatedSection from '../components/AnimatedSection';
 const skills = [
   {
     category: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'C++', 'C#', 'Java', 'Python', 'SQL'],
+    items: ['Python', 'TypeScript', 'JavaScript', 'C#', 'C++', 'Java', 'SQL'],
   },
   {
-    category: 'Frontend',
-    items: ['React', 'Vite', 'Tailwind CSS', 'Zustand', 'React Router', 'Jest/Vitest', 'React Testing Library'],
+    category: 'AI & Agents',
+    items: ['Agent orchestration', 'Agent safety & guardrails', 'LLM evals', 'LLM integration (Claude, GPT-4o)', 'Embeddings'],
   },
   {
     category: 'Backend & Data',
-    items: ['.NET 10', 'C#', 'Node.js', 'PostgreSQL', 'EF Core', 'Firebase', 'REST APIs'],
+    items: ['.NET 10 / ASP.NET Core', 'EF Core', 'Node.js', 'LangGraph', 'PostgreSQL', 'Supabase', 'Firebase', 'REST APIs'],
   },
   {
-    category: 'AI & Automation',
-    items: ['Claude API', 'Multi-agent orchestration', 'LLM tool-calling', 'Prompt engineering'],
+    category: 'Frontend',
+    items: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'Zustand', 'Blazor'],
   },
   {
     category: 'Tools & Practices',
-    items: ['Git/GitHub', 'Docker', 'Linux', 'CI/CD', 'Figma'],
-  },
-  {
-    category: 'Learning',
-    items: ['Next.js', 'React Query', 'Blazor Server'],
+    items: ['Git/GitHub', 'Docker', 'Linux', 'systemd', 'CI/CD'],
   },
 ];
 
@@ -57,20 +53,21 @@ const About = () => {
             </div>
             <div className="max-w-none">
               <p className="text-lg text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
-                I'm a software engineer building production SaaS and automation systems.
-                I'm currently developing Meridian, a multi-tenant government BD platform on
-                ASP.NET Core 10, PostgreSQL, and Blazor Server. Previously, I built BidMatch
-                at KomBea, an automated contract pipeline that surfaced and qualified 35+
-                government and enterprise opportunities from a standing start.
+                I'm a full-stack AI software engineer. I specialize in making AI systems
+                trustworthy: agent guardrails, LLM evaluation harnesses, and tamper-evident
+                audit trails. I founded Pursuvo, a multi-tenant SaaS platform automating
+                government business development, and previously built BidMatch at KomBea,
+                an automated contract pipeline that surfaced and qualified 35+ government
+                opportunities from a standing start.
               </p>
               <p className="text-lg text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
-                I'm comfortable across the stack: React/TypeScript frontends, .NET backends,
-                and Linux deployment. I hold a B.S. in Computer Science from the University
-                of Utah (December 2025), where my senior capstone GrooveKit, a cross-platform
-                educational DAW, won the "Coolest Project" award at the showcase.
+                I ship React/TypeScript frontends on .NET and Python backends. I hold a
+                B.S. in Computer Science from the University of Utah (December 2025), where
+                my senior capstone GrooveKit, a cross-platform educational DAW, won the
+                "Coolest Project" award at the showcase.
               </p>
               <p className="text-lg text-stone-600 dark:text-stone-300 leading-relaxed">
-                I speak English natively and French at an intermediate-advanced level.
+                I speak English natively and French proficiently.
               </p>
             </div>
           </div>
@@ -115,15 +112,40 @@ const About = () => {
           <div className="space-y-10 mb-20">
             <div className="border-l-2 border-primary-500 pl-6">
               <p className="font-mono text-xs uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-1">
+                April 2026 – Present · Remote
+              </p>
+              <h3 className="font-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
+                Founder · Pursuvo
+              </h3>
+              <ul className="list-disc list-outside ml-4 text-stone-600 dark:text-stone-300 space-y-2 leading-relaxed">
+                <li>Founded Pursuvo, a multi-tenant SaaS platform automating government business development: opportunity ingestion, configurable scoring, POC enrichment, and multi-step outreach with CAN-SPAM compliance</li>
+                <li>Designed a hexagonal architecture with row-level tenant isolation, pluggable CRM adapters (Pipedrive, HubSpot, Salesforce), and a rule-based scoring engine; 986 passing unit and integration tests (.NET 10, PostgreSQL, EF Core)</li>
+              </ul>
+            </div>
+
+            <div className="border-l-2 border-primary-500 pl-6">
+              <p className="font-mono text-xs uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-1">
+                June 2026 · Salt Lake City, UT (Hybrid)
+              </p>
+              <h3 className="font-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
+                Co-Founder · Intro
+              </h3>
+              <ul className="list-disc list-outside ml-4 text-stone-600 dark:text-stone-300 space-y-2 leading-relaxed">
+                <li>Built the evaluation harness for Intro's GPT-4o student matching engine (Next.js, Supabase): CI workflows for automated and LLM-graded match quality, stress tests, and match-breakdown diagnostics</li>
+                <li>Shipped the embedding-based interest derivation route and authored the compliance posture behind university deals: DPIA, data-flow architecture, incident response, disaster recovery, and HECVAT (FERPA, Utah GDPA)</li>
+              </ul>
+            </div>
+
+            <div className="border-l-2 border-stone-300 dark:border-stone-700 pl-6">
+              <p className="font-mono text-xs uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-1">
                 January 2026 – April 2026 · Lehi, UT
               </p>
               <h3 className="font-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
                 Software Engineer (Contract) · KomBea Corp.
               </h3>
               <ul className="list-disc list-outside ml-4 text-stone-600 dark:text-stone-300 space-y-2 leading-relaxed">
-                <li>Built BidMatch, an automated government contract pipeline (SAM.gov → PostgreSQL → Pipedrive CRM) that surfaced and qualified 35+ opportunities from zero prior government business</li>
-                <li>Architected a multi-agent AI system (8 agents) coordinating research, qualification, targeting, and outreach workflows autonomously</li>
-                <li>Designed data pipelines supporting enterprise deal flow across federal and state government market segments</li>
+                <li>Built BidMatch, an automated SAM.gov → PostgreSQL → Pipedrive pipeline (.NET 10, C#) that surfaced and qualified 35+ government opportunities from zero, deployed as a systemd service with concurrency-safe writes</li>
+                <li>Architected an 8-agent AI system coordinating research, lead qualification, POC targeting, and outreach autonomously, with no prior AI infrastructure at the company</li>
               </ul>
             </div>
 
@@ -135,7 +157,7 @@ const About = () => {
                 Shift Lead · Culver's
               </h3>
               <ul className="list-disc list-outside ml-4 text-stone-600 dark:text-stone-300 space-y-2 leading-relaxed">
-                <li>Led shifts of 10+ team members in a high-volume environment; trained 15+ new hires and consistently maintained service quality under pressure</li>
+                <li>Led shifts of 10+ team members and trained 15+ new hires while completing a CS degree</li>
               </ul>
             </div>
           </div>

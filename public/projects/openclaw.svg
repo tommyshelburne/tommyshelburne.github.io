@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="'IBM Plex Mono', ui-monospace, Menlo, monospace">
+  <defs>
+    <pattern id="o-dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#2a241e"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="#161310"/>
+  <rect width="1200" height="750" fill="url(#o-dots)"/>
+  <rect x="28" y="28" width="1144" height="694" fill="none" stroke="#332c24" stroke-width="1.5"/>
+
+  <!-- message bus -->
+  <line x1="200" y1="395" x2="1000" y2="395" stroke="#a67ec2" stroke-width="2.5"/>
+  <circle cx="200" cy="395" r="5" fill="#a67ec2"/>
+  <circle cx="1000" cy="395" r="5" fill="#a67ec2"/>
+
+  <!-- agents above the bus -->
+  <g stroke="#8d8579" stroke-width="2" fill="none">
+    <rect x="255" y="215" width="90" height="70"/>
+    <rect x="415" y="215" width="90" height="70"/>
+    <rect x="575" y="215" width="90" height="70"/>
+    <rect x="735" y="215" width="90" height="70"/>
+    <rect x="895" y="215" width="90" height="70"/>
+  </g>
+  <g stroke="#55465f" stroke-width="1.5">
+    <line x1="300" y1="285" x2="300" y2="395"/>
+    <line x1="460" y1="285" x2="460" y2="395"/>
+    <line x1="620" y1="285" x2="620" y2="395"/>
+    <line x1="780" y1="285" x2="780" y2="395"/>
+    <line x1="940" y1="285" x2="940" y2="395"/>
+  </g>
+
+  <!-- agents below the bus -->
+  <g stroke="#8d8579" stroke-width="2" fill="none">
+    <rect x="255" y="465" width="90" height="70"/>
+    <rect x="415" y="465" width="90" height="70"/>
+    <rect x="575" y="465" width="90" height="70"/>
+    <rect x="735" y="465" width="90" height="70"/>
+    <rect x="895" y="465" width="90" height="70"/>
+  </g>
+  <g stroke="#55465f" stroke-width="1.5">
+    <line x1="300" y1="395" x2="300" y2="465"/>
+    <line x1="460" y1="395" x2="460" y2="465"/>
+    <line x1="620" y1="395" x2="620" y2="465"/>
+    <line x1="780" y1="395" x2="780" y2="465"/>
+    <line x1="940" y1="395" x2="940" y2="465"/>
+  </g>
+
+  <!-- messages in flight -->
+  <circle cx="380" cy="395" r="6" fill="#ede8e0"/>
+  <circle cx="700" cy="395" r="6" fill="#ede8e0"/>
+  <circle cx="860" cy="395" r="6" fill="#ede8e0"/>
+
+  <text x="64" y="86" font-size="22" letter-spacing="6" fill="#8d8579">OPENCLAW</text>
+  <text x="64" y="690" font-size="15" letter-spacing="3" fill="#5c544a">AI AGENT FLEET · 10 AGENTS / INTER-AGENT MESSAGING</text>
+  <text x="1136" y="92" font-size="56" text-anchor="end" font-style="italic" fill="#332c24">04</text>
+</svg>
