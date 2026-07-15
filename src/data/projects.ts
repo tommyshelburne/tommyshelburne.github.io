@@ -4,11 +4,11 @@ export const projects: Project[] = [
   {
     id: 'pursuvo',
     title: 'Pursuvo',
-    description: 'A multi-tenant SaaS platform for government business development, live at meridianbd.dev: procurement opportunities ingested from federal and state portals, scored against tenant-defined market profiles, enriched with points of contact, and driven through multi-step outreach.',
+    description: 'A multi-tenant SaaS platform for government business development, live at pursuvo.com: procurement opportunities ingested from federal and state portals, scored against tenant-defined market profiles, enriched with points of contact, and driven through multi-step outreach.',
     longDescription: 'Clean architecture with dependencies flowing inward, multi-tenancy enforced at the persistence layer via EF Core global query filters, per-tenant OIDC SSO with dynamic scheme registration, and a .NET Worker for scheduled ingestion, scoring, and sequence progression. Pre-GA and onboarding design partners. Stack: ASP.NET Core 10, C#, PostgreSQL, EF Core, Blazor Server.',
     technologies: ['ASP.NET Core 10', 'C#', 'PostgreSQL', 'EF Core', 'Blazor Server'],
     imageUrl: '/projects/pursuvo.svg',
-    demoUrl: 'https://meridianbd.dev',
+    demoUrl: 'https://pursuvo.com',
     featured: true,
   },
   {
